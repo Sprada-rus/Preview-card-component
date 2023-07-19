@@ -72,7 +72,7 @@ footer {
 
 .card__content > .type-product {
   text-transform: uppercase;
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
 }
 
 .card__content > .name-product {
@@ -83,7 +83,7 @@ footer {
 
 .card__content > .desc-product {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .price {
@@ -126,7 +126,6 @@ footer {
   justify-content: center;
   transition: background-color .2s linear;
   user-select: none;
-
 }
 
 .basket-icon {
@@ -143,4 +142,36 @@ footer {
 
 .btn-add:active {
   background-color: var(--very-dark-cyan);
+}
+
+@media (min-width: 1440px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .card {
+    display: flex;
+    width: 40vw;
+    min-height: 40vh;
+    align-items: stretch;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .card__image {
+    width: 50%;
+    height: auto;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: .5rem;
+    background-image: var(--desktop-image);
+  }
+
+  .card__content {
+    width: 50%;
+    border-top-right-radius: .5rem;
+    border-bottom-left-radius: 0;
+  }
 }
