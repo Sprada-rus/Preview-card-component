@@ -13,7 +13,7 @@
   <!-- Main content -->
   <main>
     <div class="card">
-      <div class="card__image" style="--mobile-image: url('./images/image-product-mobile.jpg'); --desktop-image: url('./images/image-product-desktop.jpg')"></div>
+      <div class="card__image"></div>
       <div class="card__content"> 
         <p class="type-product">Perfume</p>
         <p class="name-product">Gabrielle Essence Eau De Parfum</p>
@@ -39,5 +39,15 @@
       </p>
     </div>
   </footer>
+
+  
+  <script type="module">
+    import mobileImage from './images/image-product-mobile.jpg';
+    import desktopImage from './images/image-product-desktop.jpg';
+    
+    const cardImage = document.querySelector('.card__image');
+    cardImage.style.setProperty('--mobile-image', `url(${mobileImage})`);
+    cardImage.style.setProperty('--desktop-image', `url(${desktopImage})`);
+  </script>
 </body>
 </html>
